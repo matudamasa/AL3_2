@@ -33,7 +33,7 @@ void GameScene::Initialize() {
 	worldTransform_.scale_ = {5.0f, 5.0f, 5.0f};
 
 	// X, Y, Z 軸回周りの回転角を設定
-	worldTransform_.rotation_ = {XM_PI / 4.0f, XM_PI / 4.0f, 0.0f};
+	worldTransform_.rotation_ = {XM_PI / 0.785398f, XM_PI / 0.785398f, 0.0f};
 
 	// X, Y, Z 軸回周りの回転角を設定
 	worldTransform_.translation_ = {10.0f, 10.0f, 10.0f};
