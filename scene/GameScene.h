@@ -22,6 +22,17 @@ class GameScene {
 	/// </summary>
 	GameScene();
 
+
+	//3Dモデル
+	Model* model_ = nullptr;
+
+	//ワールドトランスフォーム
+	WorldTransform worldTransform_;
+
+	//ビュープロジェクション
+	ViewProjection viewProjection_;
+
+
 	/// <summary>
 	/// デストラクタ
 	/// </summary>
@@ -31,6 +42,9 @@ class GameScene {
 	/// 初期化
 	/// </summary>
 	void Initialize();
+
+	
+
 
 	/// <summary>
 	/// 毎フレーム処理
@@ -51,4 +65,8 @@ class GameScene {
 	/// <summary>
 	/// ゲームシーン用
 	/// </summary>
+	
+	//テクスチャハンドル
+	uint32_t textureHandle_ = 0; 
+	
 };
