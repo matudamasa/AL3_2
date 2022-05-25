@@ -27,12 +27,13 @@ class GameScene {
 	Model* model_ = nullptr;
 
 	//ワールドトランスフォーム
-	WorldTransform worldTransform_;
+	WorldTransform worldTransform_[100];
 
 	//ビュープロジェクション
 	ViewProjection viewProjection_;
 
-
+	// カメラ上方向の角度
+	float viewAngle = 0.0f;
 	/// <summary>
 	/// デストラクタ
 	/// </summary>
@@ -69,4 +70,6 @@ class GameScene {
 	//テクスチャハンドル
 	uint32_t textureHandle_ = 0; 
 	
+	int32_t value_ = 0;
+
 };
